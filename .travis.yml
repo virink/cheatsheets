@@ -2,9 +2,36 @@ os: osx
 language: ruby
 rvm:
   - 2.3
+branches:
+  only:
+  - master
 git:
   submodules: false
 before_install:
+  - ls -al
+  - openssl aes-256-cbc -K $encrypted_9d1492ec0b1f_key -iv $encrypted_9d1492ec0b1f_iv
+    -in .travis_rsa.enc -out ~/.ssh/id_rsa -d
+  - cp .travis_config ~/.ssh/config
+  - chmod 600 ~/.ssh/id_rsa
   - git submodule update --init --recursive
-install: sudo gem install cheatset --no-ri --no-rdoc
-script: find cheatsheets -name "*.rb" | xargs -n 1 cheatset generate
+  - git config --global push.default simple
+  - git config --global user.name 'virink'
+  - git config --global user.email 'virink@outlook.com'
+install:
+  - sudo gem install cheatset --no-ri --no-rdoc
+script:
+  - mkdir dist
+  - cd dist
+  - find ../cheatsheets -name "*.rb" | xargs -n 1 cheatset generate
+  - echo "<ul>" > index.html
+  - find . -name "*.docset" | awk -F "/" '{print "<li><a href="$2"/Contents/Resources/Documents/index.html>",$2,"</a></li>" }'  >> index.html
+  - echo "</ul>" >> index.html
+after_success:
+  - eval "$(ssh-agent -s)"
+  - ssh-add ~/.ssh/id_rsa
+  - git init
+  - git checkout -b gh-pages
+  - git add -A
+  - git commit -m "Build $(date -j)"
+  - git remote add origin git@github.com:virink/cheatsheets.git
+  - git push -u origin gh-pages -f -v

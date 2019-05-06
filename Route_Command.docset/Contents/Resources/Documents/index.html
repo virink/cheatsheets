@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Route Command</title>
+<link href='style.css' rel='stylesheet'>
+<link href='//dash_ref/Category/Command For OSX/1'>
+<link href='//dash_ref_Command For OSX/Command/route add/0'>
+<link href='//dash_ref_Command For OSX/Command/route delete/0'>
+<link href='//dash_ref_Command For OSX/Command/route change/0'>
+</head>
+<body>
+<header>
+<h1>Route Command</h1>
+</header>
+<article>
+<p></p>
+<section class='category'>
+<h2 id='//dash_ref/Category/Command For OSX/1'>
+Command For OSX
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Command For OSX/Command/route add/0'>
+<td class='command'>
+<p>
+<code>route add</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'></div>
+<div class='notes'><p><strong>sudo route -n add -net [network segment] [-netmask [netmask]] -interface [interface]</strong></p>
+<pre class="highlight shell"><span class="nb">sudo </span>route <span class="nt">-n</span> add <span class="nt">-net</span> 10.0.0.0 <span class="nt">-netmask</span> 255.255.0.0 <span class="nt">-interface</span> en0&#x000A;<span class="nb">sudo </span>route <span class="nt">-n</span> add <span class="nt">-net</span> 10.0.250.0/24 <span class="nt">-interface</span> ppp0&#x000A;<span class="nb">sudo </span>route <span class="nt">-n</span> add <span class="nt">-net</span> 10.185/16 <span class="nt">-interface</span> ppp0</pre></div>
+</td>
+</tr>
+<tr id='//dash_ref_Command For OSX/Command/route delete/0'>
+<td class='command'>
+<p>
+<code>route delete</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'></div>
+<div class='notes'><p><strong>sudo route -n delete -net [network segment]</strong></p>
+<pre class="highlight shell"><span class="nb">sudo </span>route <span class="nt">-n</span> delete <span class="nt">-net</span> 10.0.250.0/24</pre></div>
+</td>
+</tr>
+<tr id='//dash_ref_Command For OSX/Command/route change/0'>
+<td class='command'>
+<p>
+<code>route change</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'></div>
+<div class='notes'><p><strong>sudo route -n -v change [network segment] -interface [interface]</strong></p>
+<pre class="highlight shell"><span class="nb">sudo </span>route <span class="nt">-n</span> <span class="nt">-v</span> change 10.185/16 <span class="nt">-interface</span> en0</pre></div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+</article>
+<footer>
+You can modify and improve this cheat sheet <a onclick="window.dash.openExternal_(this.href); return false;" href="http://github.com/virink/cheatsheets">here</a>
+</footer>
+</body>
+</html>

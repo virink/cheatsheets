@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Visual Studio Code</title>
+<link href='style.css' rel='stylesheet'>
+<link href='//dash_ref/Category/Basic Editing/1'>
+<link href='//dash_ref_Basic Editing/Entry/Cut line (empty selection)/0'>
+<link href='//dash_ref_Basic Editing/Entry/Copy line (empty selection)/0'>
+<link href='//dash_ref_Basic Editing/Entry/Cut line/0'>
+<link href='//dash_ref_Basic Editing/Entry/Delete line/0'>
+<link href='//dash_ref_Basic Editing/Entry/Insert line below/0'>
+<link href='//dash_ref_Basic Editing/Entry/Insert line above/0'>
+<link href='//dash_ref_Basic Editing/Entry/Move line down/0'>
+<link href='//dash_ref_Basic Editing/Entry/Move line up/0'>
+<link href='//dash_ref_Basic Editing/Entry/Copy line down/0'>
+<link href='//dash_ref_Basic Editing/Entry/Copy line up/0'>
+<link href='//dash_ref_Basic Editing/Entry/Select all occurrences of current selection/0'>
+<link href='//dash_ref_Basic Editing/Entry/Select all occurrences of current word/0'>
+<link href='//dash_ref_Basic Editing/Entry/Insert cursor below/0'>
+<link href='//dash_ref_Basic Editing/Entry/Insert cursor above/0'>
+<link href='//dash_ref_Basic Editing/Entry/Jump to matching bracket/0'>
+<link href='//dash_ref_Basic Editing/Entry/Indent line/0'>
+<link href='//dash_ref_Basic Editing/Entry/Outdent line/0'>
+<link href='//dash_ref_Basic Editing/Entry/Go to beginning of line/0'>
+<link href='//dash_ref_Basic Editing/Entry/Go to end of line/0'>
+<link href='//dash_ref_Basic Editing/Entry/Go to end of file/0'>
+<link href='//dash_ref_Basic Editing/Entry/Go to beginning of file/0'>
+<link href='//dash_ref_Basic Editing/Entry/Toggle line comment/0'>
+<link href='//dash_ref_Basic Editing/Entry/Toggle block comment/0'>
+<link href='//dash_ref_Basic Editing/Entry/Find/0'>
+<link href='//dash_ref_Basic Editing/Entry/Replace/0'>
+<link href='//dash_ref_Basic Editing/Entry/Find next/0'>
+<link href='//dash_ref_Basic Editing/Entry/Find previous/0'>
+<link href='//dash_ref_Basic Editing/Entry/Toggle use of tab key for setting focus/0'>
+<link href='//dash_ref/Category/Rich Languages Editing/1'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Trigger suggest/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Format code/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Go to definition/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Peek definition/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Quick fix/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Show references/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Rename symbol/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Replace with next value/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Replace with previous value/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Expand ast select/0'>
+<link href='//dash_ref_Rich Languages Editing/Entry/Shrink ast select/0'>
+<link href='//dash_ref/Category/Navigation/1'>
+<link href='//dash_ref_Navigation/Entry/Show all symbols/0'>
+<link href='//dash_ref_Navigation/Entry/Go to line.../0'>
+<link href='//dash_ref_Navigation/Entry/Go to file.../0'>
+<link href='//dash_ref_Navigation/Entry/Go to symbol.../0'>
+<link href='//dash_ref_Navigation/Entry/Show errors and warnings/0'>
+<link href='//dash_ref_Navigation/Entry/Go to next error or warning/0'>
+<link href='//dash_ref_Navigation/Entry/Go to previous error or warning/0'>
+<link href='//dash_ref_Navigation/Entry/Show all commands/0'>
+<link href='//dash_ref_Navigation/Entry/Navigate history/0'>
+<link href='//dash_ref_Navigation/Entry/Go back/0'>
+<link href='//dash_ref_Navigation/Entry/Go forward/0'>
+<link href='//dash_ref/Category/Editor%2FWindow Management/1'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/New window/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Close window/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Close editor/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Cycle between opened editors/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Split editor/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Focus into left hand editor/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Focus into side editor/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Focus into right hand editor/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Focus into next editor on the left/0'>
+<link href='//dash_ref_Editor%2FWindow Management/Entry/Focus into next editor on the right/0'>
+<link href='//dash_ref/Category/File Management/1'>
+<link href='//dash_ref_File Management/Entry/New file/0'>
+<link href='//dash_ref_File Management/Entry/Open file.../0'>
+<link href='//dash_ref_File Management/Entry/Save/0'>
+<link href='//dash_ref_File Management/Entry/Save all/0'>
+<link href='//dash_ref_File Management/Entry/Save as.../0'>
+<link href='//dash_ref/Category/Display/1'>
+<link href='//dash_ref_Display/Entry/Toggle full screen/0'>
+<link href='//dash_ref_Display/Entry/Zoom in/0'>
+<link href='//dash_ref_Display/Entry/Zoom out/0'>
+<link href='//dash_ref_Display/Entry/Toggle sidebar visibility/0'>
+<link href='//dash_ref_Display/Entry/Show debug/0'>
+<link href='//dash_ref_Display/Entry/Show explorer/0'>
+<link href='//dash_ref_Display/Entry/Show search/0'>
+<link href='//dash_ref_Display/Entry/Toggle search details/0'>
+<link href='//dash_ref_Display/Entry/Open new console/0'>
+<link href='//dash_ref_Display/Entry/Show output/0'>
+<link href='//dash_ref_Display/Entry/Show omnisharp log/0'>
+<link href='//dash_ref_Display/Entry/Show omnisharp log to the side/0'>
+<link href='//dash_ref_Display/Entry/Toggle markdown preview/0'>
+<link href='//dash_ref/Category/Debug/1'>
+<link href='//dash_ref_Debug/Entry/Toggle breakpoint/0'>
+<link href='//dash_ref_Debug/Entry/Continue/0'>
+<link href='//dash_ref_Debug/Entry/Pause/0'>
+<link href='//dash_ref_Debug/Entry/Step into/0'>
+<link href='//dash_ref_Debug/Entry/Step out/0'>
+<link href='//dash_ref_Debug/Entry/Step over/0'>
+<link href='//dash_ref_Debug/Entry/Stop/0'>
+<link href='//dash_ref/Category/Tasks/1'>
+<link href='//dash_ref_Tasks/Entry/Run build task/0'>
+<link href='//dash_ref_Tasks/Entry/Run test task/0'>
+</head>
+<body>
+<header>
+<h1>Visual Studio Code</h1>
+</header>
+<article>
+<p></p>
+<section class='category'>
+<h2 id='//dash_ref/Category/Basic Editing/1'>
+Basic Editing
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Basic Editing/Entry/Cut line (empty selection)/0'>
+<td class='command'>
+<p>
+<code>CMD+X</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Cut line (empty selection)</p>
+</div>
+<div class='notes'><p><code>editor.action.clipboardCutAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Copy line (empty selection)/0'>
+<td class='command'>
+<p>
+<code>CMD+C</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Copy line (empty selection)</p>
+</div>
+<div class='notes'><p><code>editor.action.clipboardCopyAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Cut line/0'>
+<td class='command'>
+<p>
+<code>SHIFT+Delete</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Cut line</p>
+</div>
+<div class='notes'><p><code>editor.action.cutLines</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Delete line/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+K</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Delete line</p>
+</div>
+<div class='notes'><p><code>editor.action.deleteLines</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Insert line below/0'>
+<td class='command'>
+<p>
+<code>CMD+Enter</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Insert line below</p>
+</div>
+<div class='notes'><p><code>editor.action.insertLineAfter</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Insert line above/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+Enter</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Insert line above</p>
+</div>
+<div class='notes'><p><code>editor.action.insertLineBefore</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Move line down/0'>
+<td class='command'>
+<p>
+<code>ALT+Arrow Down</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Move line down</p>
+</div>
+<div class='notes'><p><code>editor.action.moveLinesDownAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Move line up/0'>
+<td class='command'>
+<p>
+<code>ALT+Arrow Up</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Move line up</p>
+</div>
+<div class='notes'><p><code>editor.action.moveLinesUpAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Copy line down/0'>
+<td class='command'>
+<p>
+<code>ALT+SHIFT+Arrow Down</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Copy line down</p>
+</div>
+<div class='notes'><p><code>editor.action.copyLinesDownAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Copy line up/0'>
+<td class='command'>
+<p>
+<code>ALT+SHIFT+Arrow Up</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Copy line up</p>
+</div>
+<div class='notes'><p><code>editor.action.copyLinesUpAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Select all occurrences of current selection/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+L</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Select all occurrences of current selection</p>
+</div>
+<div class='notes'><p><code>editor.action.selectHighlights</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Select all occurrences of current word/0'>
+<td class='command'>
+<p>
+<code>CMD+F2</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Select all occurrences of current word</p>
+</div>
+<div class='notes'><p><code>editor.action.changeAll</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Insert cursor below/0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+Arrow Down</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Insert cursor below</p>
+</div>
+<div class='notes'><p><code>editor.action.insertCursorBelow</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Insert cursor above/0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+Arrow Up</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Insert cursor above</p>
+</div>
+<div class='notes'><p><code>editor.action.insertCursorAbove</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Jump to matching bracket/0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+]</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Jump to matching bracket</p>
+</div>
+<div class='notes'><p><code>editor.action.jumpToBracket</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Indent line/0'>
+<td class='command'>
+<p>
+<code>CMD+]</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Indent line</p>
+</div>
+<div class='notes'><p><code>editor.action.indentLines</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Outdent line/0'>
+<td class='command'>
+<p>
+<code>CMD+[</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Outdent line</p>
+</div>
+<div class='notes'><p><code>editor.action.outdentLines</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Go to beginning of line/0'>
+<td class='command'>
+<p>
+<code>CMD+Arrow Left</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to beginning of line</p>
+</div>
+<div class='notes'><p><code>cursorHome</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Go to end of line/0'>
+<td class='command'>
+<p>
+<code>CMD+Arrow Right</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to end of line</p>
+</div>
+<div class='notes'><p><code>cursorEnd</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Go to end of file/0'>
+<td class='command'>
+<p>
+<code>CMD+Arrow Down</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to end of file</p>
+</div>
+<div class='notes'><p><code>cursorBottom</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Go to beginning of file/0'>
+<td class='command'>
+<p>
+<code>CMD+Arrow Up</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to beginning of file</p>
+</div>
+<div class='notes'><p><code>cursorTop</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Toggle line comment/0'>
+<td class='command'>
+<p>
+<code>CMD+/</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle line comment</p>
+</div>
+<div class='notes'><p><code>editor.action.commentLine</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Toggle block comment/0'>
+<td class='command'>
+<p>
+<code>ALT+SHIFT+A</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle block comment</p>
+</div>
+<div class='notes'><p><code>editor.action.blockComment</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Find/0'>
+<td class='command'>
+<p>
+<code>CMD+F</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Find</p>
+</div>
+<div class='notes'><p><code>actions.find</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Replace/0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+F</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Replace</p>
+</div>
+<div class='notes'><p><code>editor.action.startFindReplaceAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Find next/0'>
+<td class='command'>
+<p>
+<code>CMD+G</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Find next</p>
+</div>
+<div class='notes'><p><code>editor.action.nextMatchFindAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Find previous/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+G</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Find previous</p>
+</div>
+<div class='notes'><p><code>editor.action.previousMatchFindAction</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Basic Editing/Entry/Toggle use of tab key for setting focus/0'>
+<td class='command'>
+<p>
+<code>CMD+M</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle use of tab key for setting focus</p>
+</div>
+<div class='notes'><p><code>editor.action.toggleTabFocusMode</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Rich Languages Editing/1'>
+Rich Languages Editing
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Trigger suggest/0'>
+<td class='command'>
+<p>
+<code>CTRL+Space</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Trigger suggest</p>
+</div>
+<div class='notes'><p><code>editor.action.triggerSuggest</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Format code/0'>
+<td class='command'>
+<p>
+<code>ALT+SHIFT+F</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Format code</p>
+</div>
+<div class='notes'><p><code>editor.action.format</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Go to definition/0'>
+<td class='command'>
+<p>
+<code>F12</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to definition</p>
+</div>
+<div class='notes'><p><code>editor.action.goToDeclaration</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Peek definition/0'>
+<td class='command'>
+<p>
+<code>ALT+F12</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Peek definition</p>
+</div>
+<div class='notes'><p><code>editor.action.previewDeclaration</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Quick fix/0'>
+<td class='command'>
+<p>
+<code>CMD+.</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Quick fix</p>
+</div>
+<div class='notes'><p><code>editor.action.quickFix</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Show references/0'>
+<td class='command'>
+<p>
+<code>SHIFT+F12</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show references</p>
+</div>
+<div class='notes'><p><code>editor.action.referenceSearch.trigger</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Rename symbol/0'>
+<td class='command'>
+<p>
+<code>F2</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Rename symbol</p>
+</div>
+<div class='notes'><p><code>editor.action.rename</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Replace with next value/0'>
+<td class='command'>
+<p>
+<code>CMD+Arrow Down</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Replace with next value</p>
+</div>
+<div class='notes'><p><code>editor.action.inPlaceReplace.down</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Replace with previous value/0'>
+<td class='command'>
+<p>
+<code>CMD+Arrow Up</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Replace with previous value</p>
+</div>
+<div class='notes'><p><code>editor.action.inPlaceReplace.up</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Expand ast select/0'>
+<td class='command'>
+<p>
+<code>CTRL+SHIFT+Arrow Right</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Expand ast select</p>
+</div>
+<div class='notes'><p><code>editor.action.smartSelect.grow</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Rich Languages Editing/Entry/Shrink ast select/0'>
+<td class='command'>
+<p>
+<code>CTRL+SHIFT+Arrow Left</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Shrink ast select</p>
+</div>
+<div class='notes'><p><code>editor.action.smartSelect.shrink</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Navigation/1'>
+Navigation
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Navigation/Entry/Show all symbols/0'>
+<td class='command'>
+<p>
+<code>CMD+T</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show all symbols</p>
+</div>
+<div class='notes'><p><code>workbench.action.showAllSymbols</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go to line.../0'>
+<td class='command'>
+<p>
+<code>CTRL+G</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to line...</p>
+</div>
+<div class='notes'><p><code>workbench.action.gotoLine</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go to file.../0'>
+<td class='command'>
+<p>
+<code>CMD+P</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to file...</p>
+</div>
+<div class='notes'><p><code>workbench.action.quickOpen</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go to symbol.../0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+O</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to symbol...</p>
+</div>
+<div class='notes'><p><code>workbench.action.gotoSymbol</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Show errors and warnings/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+M</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show errors and warnings</p>
+</div>
+<div class='notes'><p><code>workbench.action.showErrorsWarnings</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go to next error or warning/0'>
+<td class='command'>
+<p>
+<code>F8</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to next error or warning</p>
+</div>
+<div class='notes'><p><code>editor.action.marker.next</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go to previous error or warning/0'>
+<td class='command'>
+<p>
+<code>SHIFT+F8</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go to previous error or warning</p>
+</div>
+<div class='notes'><p><code>editor.action.marker.prev</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Show all commands/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+P</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show all commands</p>
+</div>
+<div class='notes'><p><code>workbench.action.showCommands</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Navigate history/0'>
+<td class='command'>
+<p>
+<code>CTRL+Tab</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Navigate history</p>
+</div>
+<div class='notes'><p><code>workbench.action.openPreviousEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go back/0'>
+<td class='command'>
+<p>
+<code>CTRL+-</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go back</p>
+</div>
+<div class='notes'><p><code>workbench.action.navigateBack</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Navigation/Entry/Go forward/0'>
+<td class='command'>
+<p>
+<code>CTRL+SHIFT+-</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Go forward</p>
+</div>
+<div class='notes'><p><code>workbench.action.navigateForward</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Editor%2FWindow Management/1'>
+Editor/Window Management
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/New window/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+N</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>New window</p>
+</div>
+<div class='notes'><p><code>workbench.action.newWindow</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Close window/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+W</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Close window</p>
+</div>
+<div class='notes'><p><code>workbench.action.closeWindow</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Close editor/0'>
+<td class='command'>
+<p>
+<code>CMD+W</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Close editor</p>
+</div>
+<div class='notes'><p><code>workbench.action.closeActiveEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Cycle between opened editors/0'>
+<td class='command'>
+<p>
+<code>unassigned</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Cycle between opened editors</p>
+</div>
+<div class='notes'><p><code>workbench.action.cycleEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Split editor/0'>
+<td class='command'>
+<p>
+<code>CMD+\</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Split editor</p>
+</div>
+<div class='notes'><p><code>workbench.action.splitEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Focus into left hand editor/0'>
+<td class='command'>
+<p>
+<code>CMD+1</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Focus into left hand editor</p>
+</div>
+<div class='notes'><p><code>workbench.action.focusFirstEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Focus into side editor/0'>
+<td class='command'>
+<p>
+<code>CMD+2</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Focus into side editor</p>
+</div>
+<div class='notes'><p><code>workbench.action.focusSecondEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Focus into right hand editor/0'>
+<td class='command'>
+<p>
+<code>CMD+3</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Focus into right hand editor</p>
+</div>
+<div class='notes'><p><code>workbench.action.focusThirdEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Focus into next editor on the left/0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+Arrow Left</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Focus into next editor on the left</p>
+</div>
+<div class='notes'><p><code>workbench.action.focusLeftEditor</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Editor%2FWindow Management/Entry/Focus into next editor on the right/0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+Arrow Right</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Focus into next editor on the right</p>
+</div>
+<div class='notes'><p><code>workbench.action.focusRightEditor</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/File Management/1'>
+File Management
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_File Management/Entry/New file/0'>
+<td class='command'>
+<p>
+<code>CMD+N</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>New file</p>
+</div>
+<div class='notes'><p><code>workbench.action.files.newUntitledFile</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_File Management/Entry/Open file.../0'>
+<td class='command'>
+<p>
+<code>unassigned</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Open file...</p>
+</div>
+<div class='notes'><p><code>workbench.action.files.openFile</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_File Management/Entry/Save/0'>
+<td class='command'>
+<p>
+<code>CMD+S</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Save</p>
+</div>
+<div class='notes'><p><code>workbench.action.files.save</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_File Management/Entry/Save all/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+S</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Save all</p>
+</div>
+<div class='notes'><p><code>workbench.action.files.saveAll</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_File Management/Entry/Save as.../0'>
+<td class='command'>
+<p>
+<code>CMD+ALT+S</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Save as...</p>
+</div>
+<div class='notes'><p><code>workbench.action.files.saveAs</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Display/1'>
+Display
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Display/Entry/Toggle full screen/0'>
+<td class='command'>
+<p>
+<code>CMD+CTRL+F</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle full screen</p>
+</div>
+<div class='notes'><p><code>workbench.action.toggleFullScreen</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Zoom in/0'>
+<td class='command'>
+<p>
+<code>CMD+=</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Zoom in</p>
+</div>
+<div class='notes'><p><code>workbench.action.zoomIn</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Zoom out/0'>
+<td class='command'>
+<p>
+<code>CMD+-</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Zoom out</p>
+</div>
+<div class='notes'><p><code>workbench.action.zoomOut</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Toggle sidebar visibility/0'>
+<td class='command'>
+<p>
+<code>CMD+B</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle sidebar visibility</p>
+</div>
+<div class='notes'><p><code>workbench.action.toggleSidebarVisibility</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Show debug/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+D</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show debug</p>
+</div>
+<div class='notes'><p><code>workbench.view.debug</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Show explorer/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+E</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show explorer</p>
+</div>
+<div class='notes'><p><code>workbench.view.explorer</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Show search/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+F</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show search</p>
+</div>
+<div class='notes'><p><code>workbench.view.search</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Toggle search details/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+J</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle search details</p>
+</div>
+<div class='notes'><p><code>workbench.action.search.toggleQueryDetails</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Open new console/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+C</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Open new console</p>
+</div>
+<div class='notes'><p><code>workbench.action.terminal.openNativeConsole</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Show output/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+U</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show output</p>
+</div>
+<div class='notes'><p><code>workbench.action.output.showOutput</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Show omnisharp log/0'>
+<td class='command'>
+<p>
+<code>CMD+U L</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show omnisharp log</p>
+</div>
+<div class='notes'><p><code>omnisharp.show.generalLog</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Show omnisharp log to the side/0'>
+<td class='command'>
+<p>
+<code>CMD+U CMD+L</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Show omnisharp log to the side</p>
+</div>
+<div class='notes'><p><code>omnisharp.show.generalLogOnSide</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Display/Entry/Toggle markdown preview/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+V</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle markdown preview</p>
+</div>
+<div class='notes'><p><code>workbench.action.markdown.togglePreview</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Debug/1'>
+Debug
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Debug/Entry/Toggle breakpoint/0'>
+<td class='command'>
+<p>
+<code>F9</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Toggle breakpoint</p>
+</div>
+<div class='notes'><p><code>editor.debug.action.toggleBreakpoint</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Debug/Entry/Continue/0'>
+<td class='command'>
+<p>
+<code>F5</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Continue</p>
+</div>
+<div class='notes'><p><code>workbench.action.debug.play</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Debug/Entry/Pause/0'>
+<td class='command'>
+<p>
+<code>F5</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Pause</p>
+</div>
+<div class='notes'><p><code>workbench.action.debug.start</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Debug/Entry/Step into/0'>
+<td class='command'>
+<p>
+<code>F11</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Step into</p>
+</div>
+<div class='notes'><p><code>workbench.action.debug.stepInto</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Debug/Entry/Step out/0'>
+<td class='command'>
+<p>
+<code>SHIFT+F11</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Step out</p>
+</div>
+<div class='notes'><p><code>workbench.action.debug.stepOut</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Debug/Entry/Step over/0'>
+<td class='command'>
+<p>
+<code>F10</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Step over</p>
+</div>
+<div class='notes'><p><code>workbench.action.debug.stepOver</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Debug/Entry/Stop/0'>
+<td class='command'>
+<p>
+<code>SHIFT+F5</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Stop</p>
+</div>
+<div class='notes'><p><code>workbench.action.debug.stop</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='category'>
+<h2 id='//dash_ref/Category/Tasks/1'>
+Tasks
+</h2>
+<div class='scrollable'>
+<table>
+<tr id='//dash_ref_Tasks/Entry/Run build task/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+B</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Run build task</p>
+</div>
+<div class='notes'><p><code>workbench.action.tasks.build</code></p>
+</div>
+</td>
+</tr>
+<tr id='//dash_ref_Tasks/Entry/Run test task/0'>
+<td class='command'>
+<p>
+<code>CMD+SHIFT+T</code>
+</p>
+</td>
+<td class='description'>
+<div class='name'><p>Run test task</p>
+</div>
+<div class='notes'><p><code>workbench.action.tasks.test</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section>
+<section class='notes'>
+<h2>Notes</h2>
+<ul>
+<li>More information at <a href="https://code.visualstudio.com/Docs/customization">https://code.visualstudio.com/Docs/customization</a></li>
+</ul>
+
+</section>
+</article>
+<footer>
+You can modify and improve this cheat sheet <a onclick="window.dash.openExternal_(this.href); return false;" href="http://cheat.kapeli.com">here</a>
+</footer>
+</body>
+</html>

@@ -15,14 +15,17 @@ before_install:
   - chmod 600 ~/.ssh/id_rsa
   - git submodule update --init --recursive
   - git config --global push.default simple
-  - git config --global user.name 'virink'
+  - git config --global user.name 'Virink'
   - git config --global user.email 'virink@outlook.com'
 install:
   - sudo gem install cheatset --no-ri --no-rdoc
 script:
   - mkdir dist
+  # - cd dist
+  # - find ../cheatsheets -name "*.rb" | xargs -n 1 cheatset generate
+  - git log -1 --stat | grep "rb" | awk '{print $1}' | xargs -n 1 cheatset generate
+  - mv *.docset dist/
   - cd dist
-  - find ../cheatsheets -name "*.rb" | xargs -n 1 cheatset generate
   - echo "<ul>" > index.html
   - find . -name "*.docset" | awk -F "/" '{print "<li><a href="$2"/Contents/Resources/Documents/index.html>",$2,"</a></li>" }'  >> index.html
   - echo "</ul>" >> index.html
